@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div
+      class="parallax-mirror"
+      style="
+        visibility: hidden;
+        z-index: -100;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        transform: translate3d(0px, -615px, 0px);
+        height: 667px;
+        width: 375px;
+      "
+    >
+      <img
+        class="parallax-slider"
+        src="img/portada.jpg"
+        style="
+          transform: translate3d(-405px, 426px, 0px);
+          position: absolute;
+          height: 667px;
+          width: 1186px;
+          max-width: none;
+        "
+      />
+    </div>
+    <div
+      class="parallax-mirror"
+      style="
+        visibility: hidden;
+        z-index: -100;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        height: 442px;
+        width: 375px;
+        transform: translate3d(0px, 622.422px, 0px);
+      "
+    >
+      <img
+        class="parallax-slider"
+        src="img/confirmar-asistencia.jpg"
+        style="
+          position: absolute;
+          height: 622px;
+          width: 1106px;
+          max-width: none;
+          transform: translate3d(-365px, -587.938px, 0px);
+        "
+      />
+    </div>
+
+    <!-- Portada -->
+
+    <section
+      class="portada parallax-portada d-flex justify-content-center align-items-center"
+    >
+      <!-- Logo central -->
+      <div class="logo-portada fade-in">
+        <img class="" src="img/logo-portada.png" alt="" />
+        <div class="scroll-down"></div>
+      </div>
+    </section>
+
+    <!-- Ceremonia y Fiesta -->
+
+    <section class="ceremonia-fiesta">
+      <div class="container">
+        <div class="row">
+          <!-- Ceremonia -->
+          <div class="col-md-6 columna">
+            <img src="img/icono-ceremonia.svg" alt="" class="icon" />
+            <h4>Ceremonia</h4>
+            <p>
+              La ceremonia se realizará el 12 de Marzo a las 19:00 horas en la
+              Parroquia Ntra. Sra. del Carmen, Tigre. Tocá el botón de abajo
+              para recibir las indicaciones para llegar.
+            </p>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Our+Lady+of+Carmen+Parish/@-34.4111811,-58.6890285,15z/data=!4m5!3m4!1s0x0:0x8c4ebd0284108d5c!8m2!3d-34.4111811!4d-58.6890285?sa=X&amp;ved=2ahUKEwiu0_qHpLXkAhWQI7kGHXi1CrgQ_BIwE3oECA8QCA&amp;shorturl=1"
+              class="btn"
+              >LLEGAR A LA CEREMONIA</a
+            >
+          </div>
+
+          <!-- Fiesta -->
+          <div class="col-md-6 columna">
+            <img src="img/icono-fiesta.svg" alt="" class="icon" />
+            <h4>Fiesta</h4>
+            <p>
+              Después de la ceremonia festejaremos en Astilleros Milberg,
+              Nordelta. Tocá el botón de abajo y encontrá las indicaciones para
+              llegar, te esperamos 😉
+            </p>
+            <a
+              target="_blank"
+              href="https://www.google.com/maps/place/Astilleros+Milberg/@-34.394427,-58.658754,15z/data=!4m5!3m4!1s0x0:0xb9c4e3b7fd60bb90!8m2!3d-34.394427!4d-58.658754?sa=X&amp;ved=2ahUKEwiG86u6pLXkAhVpIbkGHYTvAXsQ_BIwFXoECAsQCA&amp;shorturl=1"
+              class="btn"
+              >LLEGAR A LA FIESTA</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+
+    <section class="galeria">
+      <div class="row">
+        <!-- Impmrimo el bloque con la imagen -->
+        <div class="col-12 col-md-6 item-galeria">
+          <a href="img/1.jpg" data-fancybox="images" data-caption="">
+            <img class="img-fluid" src="img/1.jpg" alt="" />
+          </a>
+        </div>
+
+        <!-- Impmrimo el bloque con la imagen -->
+        <div class="col-12 col-md-6 item-galeria">
+          <a href="img/2.jpg" data-fancybox="images" data-caption="">
+            <img class="img-fluid" src="img/2.jpg" alt="" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CBU -->
+
+    <section class="cbu">
+      <div class="container">
+        <img src="img/icono-regalo.svg" alt="" class="icon" />
+        <p>
+          Si deseás realizarnos un regalo podés colaborar con nuestra Luna de
+          Miel...
+        </p>
+        <a
+          data-fancybox=""
+          data-src="#hidden-cbu"
+          href="javascript:;"
+          data-options='{"touch" : false}'
+          class="btn"
+          >Ver Datos Bancarios</a
+        >
+
+        <!-- Datos Cbu -->
+        <div style="display: none" id="hidden-cbu">
+          <span class="title">Datos Bancarios</span>
+
+          <ul>
+            <li>Nombre del Titular: Nombre Apellido</li>
+            <li>CBU: 12345623561</li>
+            <li>Alias: agenda.la.fecha</li>
+            <li>DNI: 32200552</li>
+            <li>Banco Galicia</li>
+          </ul>
+
+          <span class="title">Lista de Regalos</span>
+
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.noviosfalabella.com/novios-cl/public/inicio.do"
+                >Falabella Novios</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confirmar Asistencia -->
+
+    <section class="confirmar-asistencia parallax-confirmar">
+      <div class="container">
+        <h4>CONFIRMACIÓN DE ASISTENCIA</h4>
+        <p>
+          Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu
+          asistencia!
+        </p>
+        <a
+          target="_blank"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSe9YQMx7pJ7roFnvzgB353ytHGRUEOI_339DoK6--8r9jtZwg/viewform?usp=sf_link"
+          class="btn"
+          >Confirmar asistencia</a
+        >
+      </div>
+    </section>
+
+    <!-- Gracias -->
+
+    <section class="gracias">
+      <div class="container">
+        <p>¡Gracias por acompañarnos en este momento tan importante!</p>
+      </div>
+    </section>
+
+    <script>
+      // Cuenta regresiva
+      var fechaCuentaRegresiva = "";
+    </script>
+
+    <script
+      type="text/javascript"
+      src="assets/js/jquery-3.5.1.slim.min.js?v=1648854149"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/parallax.min.js?v=1648854150"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.fancybox.min.js?v=1648854149"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/scripts.js?v=1648854151"
+    ></script>
+
+    <script>
+      "undefined" === typeof _trfq || (window._trfq = []);
+      "undefined" === typeof _trfd && (window._trfd = []),
+        _trfd.push(
+          { "tccl.baseHost": "secureserver.net" },
+          { ap: "cpsh" },
+          { server: "a2plcpnl0946" },
+          { dcenter: "a2" },
+          { cp_id: "3446280" }
+        ); // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.
+    </script>
+    <script src="https://img1.wsimg.com/traffic-assets/js/tccl.min.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
